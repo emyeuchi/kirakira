@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>虹色のキラキラ</title>
+	<style>
+		body {
+			background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+			background-size: 200% 200%;
+			animation: gradient 5s ease infinite;
+		}
+		h1 {
+			font-size: 5em;
+			color: white;
+			text-shadow: 2px 2px 5px black;
+			animation: blink 1s ease infinite;
+		}
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+		@keyframes blink {
+			0% {
+				opacity: 1;
+			}
+			50% {
+				opacity: 0.5;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+
+</body>
+</html>
